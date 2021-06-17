@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/title_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maintain"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/tv_tj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_category"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/main_back"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_rq"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_btn"
+            android:padding="@dimen/dp_6"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总金额："
+            android:textSize="@dimen/sp_15"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="@dimen/dp_3" />
+
+        <EditText
+            android:id="@+id/edt_zj"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_15"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/border_edit"
+            android:numeric="decimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textSize="@dimen/sp_15"
+            android:layout_marginTop="@dimen/dp_3" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/main_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/main_back"
+        android:layout_marginBottom="@dimen/dp_8">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:background="@drawable/border_btn"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

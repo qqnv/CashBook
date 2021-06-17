@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cashbook</string>
+
+    <string name="maintain">记账本</string>
+    <string name="add_category">添加类别</string>
+    <string name="category">类别：</string>
+    <string name="variety">菜品：</string>
+    <string name="keep">保存</string>
+    <string name="input">请输入...</string>
+    <string name="choose">请选择...</string>
+    <string name="check">查看所有类别菜品</string>
+</resources>
